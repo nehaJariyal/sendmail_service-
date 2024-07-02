@@ -19,7 +19,6 @@ interface SendMailAttributes {
 export const mailData = async (req: Request, res: Response) => {
   try {
     const dataObj: SendMailAttributes = {
-    //   id:      req.body.id,
       userName:   req.body.userName,
       email:      req.body.email,
       user_query: req.body.user_query,
